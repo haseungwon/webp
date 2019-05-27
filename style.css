@@ -9,13 +9,15 @@ header.home{
    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(battleground_main.jpg);
     height:100vh;
     width:auto;
+    min-width: 1000px;
     background-size: cover;
     background-position: center;
 }
-header.else{
+.else{
    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("background_img.jpg");
     height:100vh;
     width:auto;
+     min-width: 1000px;
     background-size: cover;
     background-position: center;
 }
@@ -89,7 +91,7 @@ ul li.active a{
 }
 
 .who_design{
-    position: absolute;
+    position: fixed;
     width:99%;
     left:0%;
     bottom:0%;
@@ -265,12 +267,31 @@ table,td,th{
 
 
 
+.frame{
+    position: absolute;
+    top:15%;
+    height: auto;
+    min-height: 300px;
+    width:85%;
+    min-width: 600px;
+    border: 1px solid #fff;
+   margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.frame p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
 
 
-
-
-
-
+iframe.control{
+    min-height:  400px;
+    min-width: 600px;
+}
 
 
 
