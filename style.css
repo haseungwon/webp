@@ -21,12 +21,12 @@ header.home{
     background-size: cover;
     background-position: center;
 }
-ul{
+ul.navi{
     float:right;
     list-style-type: none;
     margin-top:20px;
 }
-ul li{
+ul li.head{
     display: inline-block;
 }
 
@@ -277,6 +277,7 @@ table,td,th{
     border: 1px solid #fff;
    margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
     
 }
 
@@ -285,6 +286,24 @@ table,td,th{
     font-size: 20px;
     font-weight: bold;
     
+}
+.frame news{
+    text-align: left;
+    font-size: 15px;
+    padding:5px;
+   
+}
+.frame h4{
+    margin:5px;
+}
+ul.circle {
+    list-style-type:circle;
+    font-size: 15px;
+    margin: 15px;
+    list-style-position: inside;
+}
+.frame ul li{
+    padding:5px 15px;
 }
 
 
