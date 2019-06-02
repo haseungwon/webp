@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  margin: auto;
+  max-width: 500px;
+  position: relative;
+}
+
+.prev, .next {
+  top: 50%;
+  width: auto;
+  border-radius: 0 3px 3px 0;
+  padding: 16px;
+  margin-top: -22px;
+  color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgb(0,0,0);
+}
+
+.text {
+  width: 100%;
+  color: #f2f2f2;
+  font-size: 30px;
+  bottom: 8px;
+  padding: 12px 12px;
+  position: absolute;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+body {
+  background-color: rgb(255, 242, 92);
+}
+
+.cpr{
+  text-align: center;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 34px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 16px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+pre {
+  text-align: center;
+  font-family: arial;
+  color: black;
+  font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  font-family: verdana;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: rgb(255, 197, 0); 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+</head>
+<body>
+
+<h1 style="text-align:center;font-family:verdana;">Welcome to my League of Legends Fan Page!</h1>
+<div class="navbar">
+  <a href="Webpage-Home.html"><p class="">Home</p></a> 
+  <a href="Webpage-Introduction.html"><p class="">Introduction</p></a> 
+  <div class="dropdown">
+    <button class="dropbtn">About the Game
+    </button>
+    <div class="dropdown-content">
+      <a href="Webpage-About-1.html"><p>About League of Legends</p></a>
+      <a href="Webpage-About-2.html"><p>Basics</p></a>
+      <a href="Webpage-About-3.html"><p>Gameplay</p></a>
+    </div>
+  </div> 
+  <a href="Webpage-Medias.html"><p class="">Example Medias</p></a>
+  <a href="https://kr.leagueoflegends.com/"><p class="">League of Legends Page</p></a> 
+</div>
+
+
+<h3 style="text-align:center;font-family:verdana;">Gameplay - Stats</h3>
+<pre>
+There are several stats in the game that define the characteristics of a champion. 
+</pre>
+<dl style="font-family:arial;font-size:14px;">
+  <dt>Health Point</dt>
+  <dd>- Total hit point of your champion, once this reache zero, you die and must wait until you respawn again in order to<br>
+play again</dd>
+  <dt>Health Regen</dt>
+  <dd>- How much health you regain automatically</dd>
+  <dt>Mana Point</dt>
+  <dd>- Total resource point you have. Resource can be mana or something else. You require resource to cast most spells.</dd>
+  <dt>Mana/Resource Regen</dt>
+  <dd>- How much mana/resource you regain automatically.</dd>
+  <dt>Attack Damage</dt>
+  <dd>- How much damage your auto attacks deal. Auto attacks are attacks your champion performs every interval of time without<br>
+  spending any resource.</dd>
+  <dt>Magic Damage</dt>
+  <dd>- How much damage your spells deal. Some spells have magic scaling and so the higher your magic damage, the greater<br>
+  damage your champion deals. The same can be applied for attack damage scaling spells.</dd>
+  <dt>Attack Penetration</dt>
+  <dd>- How much of damage resistance you ignore from your enemy.</dd>
+  <dt>Magic Penetration</dt>
+  <dd>- How much of magic damage resistance you ignore from your enemy.</dd>
+  <dt>Lethality</dt>
+  <dd>- Attack Penetration based on how strong your champion is.</dd>
+  <dt>Attack Speed</dt>
+  <dd>- How fast your champion performs auto attacks.</dd>
+  <dt>Tenacity</dt>
+  <dd>- How quickly your champion can remove itself from crowd controls. Crowd controls refers to an ability to cast<br>
+  limitations to a champion's action. Stun for example, makes your champion unable to do anything during the duration.</dd>
+  <dt>Armor</dt>
+  <dd>- Attack damage resistance.</dd>
+  <dt>Magic Resist</dt>
+  <dd>- Magic damage resistance.</dd>
+  <dt>Range</dt>
+  <dd>- How far your spells/attacks reach.</dd>
+  <dt>Move Speed</dt>
+  <dd>- How fast your champion travels.</dd>
+  <dt>Life Steal</dt>
+  <dd>- How much health you regain from the percentage of damage you dealt when you auto attack.</dd>
+</dl>
+<hr>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/5a68d1d70515d8847b000003.jpeg" style="width:100%">
+  <div class="text">Top Lane</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://www.slashskill.com/wp-content/uploads/2015/03/Screen01.png" style="width:100%">
+  <div class="text">Mid Lane</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://apollo-na-uploads.s3.amazonaws.com/1415853156916/jythgxhf.PNG" style="width:100%">
+  <div class="text">Bot Lane(ADC and Support)</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/95/Jungle_camps_SR.jpg/revision/latest?cb=20140701232747" style="width:100%">
+  <div class="text">Jungle</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<h3 style="text-align:center;font-family:verdana;">Gameplay - Lanes and Roles</h3>
+<pre>
+There are 5 different types of positions in League of Legends - Top, Mid, ADC, Sup, and Jungle. Players are not required to follow
+this format of positions however, it has been deemed by many experimentation that one of each position is the best way to
+make your team. Top lane is generally played by champions that can support other lanes and can stay in lane for a long time without
+dying. In general, top laners can withstand a lot of damage before dying but doesn't deal much damage. Mid lane is generally
+played by a champion that can cast spells from a distance or output high amount of damage from close range. Mid laners can usually
+deal powerful bursts of damage. ADC refers to "attack damage carry". ADC are known as ADC because they are usually champions
+that deal high amount of attack damage from a distance. Carry means to lead the game to victory. Supports are champions
+that support mainly the ADC and the whole team in general. Supports vary in characteristics and stats greatly because most
+champions are suited for playing the supporting role. Jungle refers to a champion that doesn't stay in any lane but stays in the
+jungle most of the time. Junglers gank lanes when given the opportunity. Gank means to ambush an enemy.
+</pre>
+<hr>
+<h3 style="text-align:center;font-family:verdana;">Gameplay - Terminologies</h3>
+<pre>
+There are several terminologies in League of Legends
+</pre>
+<dl style="font-family:arial;font-size:14px;">
+  <dt>1v1</dt>
+  <dd>- To challenge a player in 1 on 1 duel.</dd>
+  <dt>Ace</dt>
+  <dd>- When all five or three enemies are dead and are waiting for respawn time</dd>
+  <dt>Active</dt>
+  <dd>- An ability that requre activating.</dd>
+  <dt>AFK</dt>
+  <dd>- When a player leaves a game, they are AFK(away from keyboard). AFKs are punished with a ban.</dd>
+  <dt>Aggro</dt>
+  <dd>- Targeting priority of an A.I. or enemy champions.</dd>
+  <dt>AoE</dt>
+  <dd>- Area of effect.</dd>
+  <dt>Base</dt>
+  <dd>- The area containing the nexus, two towers guarding the nexus, and the fountain is considered the base.</dd>
+  <dt>Broken</dt>
+  <dd>- When something in the game is imbalanced.</dd>
+  <dt>Camp</dt>
+  <dd>- Where monsters in the jungle spawn.</dd>
+  <dt>Gank</dt>
+  <dd>- To ambush an enemy.</dd>
+  <dt>Drake</dt>
+  <dd>- Refers to the 5 different types of dragons that spawn in the dragon's nest. Dragon's nest is located between the bot and mid lane.</dd>
+  <dt>Farm</dt>
+  <dd>- To kill anything other than an enemy champion to gain gold.</dd>
+  <dt>Tank</dt>
+  <dd>- A champion that has built mostly health and damage resistance to survive as long as possible in a fight</dd>
+  <dt>Team fight</dt>
+  <dd>- An act of fighting a five against five.</dd>
+  <dt>GLHF</dt>
+  <dd>- Abbreviation for "good luck and have fun".</dd>
+  <dt>GG</dt>
+  <dd>- Abbreviation for "good game".</dd>
+</dl>
+<br>
+<br>
+<p class="cpr">
+&copy 2019 Riot Games, Inc. 
+</p>
+</body>
+</html>
