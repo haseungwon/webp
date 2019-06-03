@@ -4,8 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     
+     <script> 
+         $(document).ready(function(){
+         $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+         
+          $(document).ready(function(){
+         $("#flip_1").click(function(){
+    $("#panel_1").slideToggle("slow");
+  });
+});
+     </script>
+     <style>
+         #flip{
+             
+             position: relative;
+             
+             
+             width:auto;
+         }
+         #panel{
+             display:none;
+             margin:5px;
+             
+         }
+          #flip_1{
+             
+             position: relative;
+             
+             
+             width:auto;
+         }
+         #panel_1{
+             display:none;
+             margin:5px;
+             
+         }
+         
+     </style>
 </head>
-    <body class="else">
+    
+    
+    
+<body class="else">
          <header >
         <div class="main">
             <div class="logo">
@@ -14,8 +60,8 @@
               <ul class="navi">
 
                 <li class="head" ><a href="index.html">Home</a></li>
-                <li class="head"><a href="video.html">videos</a></li>
-                <li class="head"><a href="learn_more.html">information</a></li>
+                <li class="head"><a href="video.html">Videos</a></li>
+                <li class="head"><a href="learn_more.html">Information</a></li>
                 <li class="active head"><a href="news.html">News</a></li>
                 
             </ul>
@@ -23,8 +69,8 @@
         </header> 
         
          <div class="frame">
-             <h1>Update #29 - Patch Notes</h1>
-             <br>
+             <div id="flip"><h1 style="border-bottom: solid;">Update #29 - Patch Notes</h1></div>
+             <div id="panel"><br>
              <news>Hi everyone,</news><br><br>
              
              
@@ -409,12 +455,45 @@
                 <li>Fixed an issue where players were able to auto-move forwards in vehicles & parachutes by opening the system menu.</li>
              </ul>
              
+             </div>
              
+             <div id="flip_1">
+                 <h1>Broadcaster Royale Twitch Streamer Skins: Group 7</h1>
+                 <h4 style="border-bottom: solid;  "> Our 7th batch of skins repping your favorite Twitch streamers have arrived</h4><br>
+             </div>
+             <div id="panel_1">
              
-             
+             <news>Our 7th batch of skins repping your favorite Twitch streamers have arrived. Since we’ve made it to the seventh phase of Broadcaster Royale skins, seven streamers have items available including Sacriel’s Crate ($20.99) with all four of Sacriel’s items.</news><br><br>
+                 
+            <news>Twitch personality skins are available between $2.99 – $9.99 each and can be purchased until 6/11 PDT until before the live server maintenance starts through in-game store. Each sale directly benefits your favorite Twitch streamer, so pick up their weapon and item skins to support them in-game and out!</news><br><br>
+                 
+            <news>This group’s streamers includes:</news><br>
+            
+            <h4>Ashek • Sacriel • Lurn • FireDragon</h4><br>
+            <div>
+               <p style="text-align: center">
+                   <img src="../img/news_SACRIEL.png" width="60%">
+                   <img src="../img/news_LURN.png" width="60%">
+                </p>
+            </div><br>
+                 
+            <h4>DTN_KH • D_Rich • BierbankB</h4><br>  
+            
+            <div>
+               <p style="text-align: center">
+                   <img src="../img/news_DTN.png" width="60%">
+                   <img src="../img/news_BIERBANKB.png" width="60%">
+                </p>
+            </div><br>
+            
+                 
+            </div>
              
         </div>  
         
+    
+    
+    
          <div class="who_design">
         <p >Class#1-Team#10 designed by Ha Seugnwon </p>
         <a href="https://github.com/haseungwon/webp">https://github.com/haseungwon/webp</a>
