@@ -10,7 +10,7 @@ header.home{
     height:100vh;
     width:auto;
     min-width: 1000px;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
 }
 .else{

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.gallery {
+  margin: 10px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  margin: auto;
+  max-width: 500px;
+  position: relative;
+}
+
+.prev, .next {
+  top: 50%;
+  width: auto;
+  border-radius: 0 3px 3px 0;
+  padding: 16px;
+  margin-top: -22px;
+  color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgb(0,0,0);
+}
+
+.text {
+  width: 100%;
+  color: #f2f2f2;
+  font-size: 30px;
+  bottom: 8px;
+  padding: 12px 12px;
+  position: absolute;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+body {
+  background-color: rgb(255, 242, 92);
+}
+
+.cpr{
+  text-align: center;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 34px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 16px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+pre {
+  text-align: center;
+  font-family: arial;
+  color: black;
+  font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  font-family: verdana;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: rgb(255, 197, 0); 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1 style="text-align:center;font-family:verdana;">Welcome to my League of Legends Fan Page!</h1>
+<div class="navbar">
+  <a href="Webpage-Home.html"><p class="">Home</p></a> 
+  <a href="Webpage-Introduction.html"><p class="">Introduction</p></a> 
+  <div class="dropdown">
+    <button class="dropbtn">About the Game
+    </button>
+    <div class="dropdown-content">
+      <a href="Webpage-About-1.html"><p>About League of Legends</p></a>
+      <a href="Webpage-About-2.html"><p>Basics</p></a>
+      <a href="Webpage-About-3.html"><p>Gameplay</p></a>
+    </div>
+  </div> 
+  <a href="Webpage-Medias.html"><p class="">Example Medias</p></a>
+  <a href="https://kr.leagueoflegends.com/"><p class="">League of Legends Page</p></a> 
+</div>
+<h3 style="text-align:center;font-family:verdana;">Basics of League of Legends - Map</h3>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/4/41/Summoner%27s_Rift_Map_Preview.jpg/revision/latest/scale-to-width-down/300?cb=20170227032638" style="width:100%">
+  <div class="text">Summoner's Rift</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://pm1.narvii.com/6082/421ab626c8b1bff2b5e5bb443f8b75bcb761f8d9_hq.jpg" style="width:100%">
+  <div class="text">Lane</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/a/ae/MeleeMinions_concept_5.jpg?version=0e60179ff9b81e1ed3ea8bb26bb4ceba" style="width:100%">
+  <div class="text">Minions</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://cdn.vox-cdn.com/thumbor/AeR6oNQtyntoMhp25KsJtal58ig=/0x0:700x500/1200x800/filters:focal(294x194:406x306)/cdn.vox-cdn.com/uploads/chorus_image/image/50496089/uhhhh.0.png" style="width:100%">
+  <div class="text">Turret</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/9/99/Inhibitor.png/revision/latest?cb=20141126213425" style="width:100%">
+  <div class="text">Inhibitor</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/3/31/Nexus.png/revision/latest?cb=20141126213135" style="width:100%">
+  <div class="text">Nexus</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<pre>
+In League of Legends there are 3 different types of map in total however, in general most people prefer to play in the "Summoner's Rift"
+and this website will be covering it. In the Summoner's Rift there are 3 main linear areas called "lane". Between these lanes is an
+area referred to as "jungle". Every so often entities called "minions" will spawn in all 3 of the lanes and attack any enemy in sight
+until they die. In the jungle, monsters will spawn after being slain and will stay passive until attacked. In each lane there are powerful
+structures called "turrets" that will attack any enemy that approach it. Behind 3 turrets there lies a structure called the "inhibitor"
+which when destroyed, cause a stronger minion to spawn in each lane. Behind the inhibitor are two turrets that guard the "nexus".
+Once you destroy the nexus, the team that belongs to the destroyed nexus will lose the game. Use the slideshow above to
+see what the quoted objects look like. 
+</pre>
+<hr>
+<h3 style="text-align:center;font-family:verdana;">Basics of League of Legends - Shops and Champions</h3>
+<img src="http://i.imgur.com/X8vnlZF.jpg" class="center" style="width:600px;height:400px;">
+<img src="https://cdn.pastemagazine.com/www/articles/lol_rankings_main.jpg" class="center" style="width:600px;height:400px;">
+<pre>
+There are over 100 champions that you can choose to play as before the game begins. Each champions have different characteristics
+and sets of skills that can be learned as you level up to become stronger. Champions each have different play styles but players
+are not confined to playing a champion by their intended role. Players can choose which traits of a champion they will enhance by 
+choosing which items to buy. Items can be bought by moving to the "fountain" an area just behind the nexus. In the shop interface
+players can choose which items they would like to buy as long as they have enough in-game currency. Each items increase different
+stats of a champion. Items can be bought by using an  in-game currency called gold. Gold is generated over time and you get a boost of it
+everytime a structure is destroyed or an enemy is killed. 
+</pre>
+<hr>
+<h3 style="text-align:center;font-family:verdana;">Basics of League of Legends - Summoner Spells, Skills, and Masteries</h3>
+
+<div class="gallery">
+  <a target="_blank" href="http://image.noelshack.com/fichiers/2014/04/1390267646-spell.png">
+    <img src="http://image.noelshack.com/fichiers/2014/04/1390267646-spell.png" alt="Spells-s" width="600" height="400">
+  </a>
+  <div class="desc">Summoner Spells</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://ddragon.leagueoflegends.com/cdn/5.3.1/img/sprite/spell0.png">
+    <img src="http://ddragon.leagueoflegends.com/cdn/5.3.1/img/sprite/spell0.png" alt="Spells-c" width="600" height="400">
+  </a>
+  <div class="desc">Example of Skills</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://vignette.wikia.nocookie.net/leagueoflegends/images/7/71/Runes_2018.jpg/revision/latest?cb=20170926113058">
+    <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/7/71/Runes_2018.jpg/revision/latest?cb=20170926113058" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Masteries</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<pre>
+Each champion has 4 unique sets of skills and one unique passive. Passive is an ability that is constantly active with no need for 
+the player to command the champion to use it. One of the 4 skills is called the ultimate. An ultimate skill is the most powerful
+skill you can use and is on a long cooltime. Cooltime is the time it takes before you can reuse an ability after using it.
+You as the summoner may choose up to two different summoner spells to use for any champions. Summoner spells are not
+unique to champions and in general champions may choose up to two spells however, there is an exception. Some champions
+may use several spells. Masteries is a trait, passive, and active ability you can choose for your champion before the game starts. Likewise summoner spells,
+masteries are not unique traits and any champion may use up one main mastery, 5 sub masteries, and 3 stat masteries. 
+</pre>
+
+<br>
+<br>
+<p class="cpr">
+&copy 2019 Riot Games, Inc. 
+</p>
+</body>
+</html>
